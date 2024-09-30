@@ -1,0 +1,91 @@
+.left-component {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 100px 20px 20px 225px; /* Add padding to the left */
+    flex-wrap: wrap; /* Allow content to wrap */
+    max-width: 100%; /* Ensure the container does not exceed the width */
+  }
+  
+  .left-component h1,
+  .left-component h2,
+  .left-component p {
+    display: block;
+    margin: 2px 0;
+    text-align: justify;
+  }
+  
+  .left-component h1 {
+    font-size: 3em; /* Increase font size for the name */
+  }
+  
+  .left-component h2 {
+    font-size: 1.5em;
+    opacity: 0.8;
+  }
+  
+  .sections {
+    position: relative;
+    margin-left: 50px; /* Add left margin */
+  }
+  
+  .sections::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc; /* Vertical line color */
+  }
+  
+  .sections h3 {
+    margin: 10px 0 30px;
+    opacity: 0.5;
+    font-size: 15px;
+    cursor: pointer; /* Add a pointer cursor to indicate these are clickable */
+    transform: scale(0.8); /* Set initial scale to 0.8 */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color */
+  }
+  
+  .sections h3:hover {
+    transform: scale(1); /* Scale to 1 on hover */
+  }
+  
+  .sections h3.active {
+    opacity: 1;
+    font-weight: bold;
+  }
+  
+  .left-component p {
+    font-size: 1em;
+    opacity: 0.7;
+    width: 70%; 
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-direction: row; /* Display icons in a row */
+    justify-content: flex-start; /* Align icons to the start (left) */
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%; /* Ensure the icons take full width and wrap if needed */
+  }
+  
+  .social-icons a {
+    color: white; /* Adjust color as needed */
+    text-decoration: none;
+    transform: scale(0.8); /* Set initial scale to 0.8 */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1); /* Scale to 1 on hover */
+  }
+  
+  /* New class for hover effect */
+  .hover-effect {
+    opacity: 1;
+  }

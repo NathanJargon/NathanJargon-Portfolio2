@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #home {
+    background: linear-gradient(to right, 
+      rgba(0, 10, 20, 0.9) 0%, 
+      rgba(0, 15, 30, 0.9) 25%, 
+      rgba(0, 20, 40, 0.9) 50%, 
+      rgba(0, 25, 50, 0.9) 75%, 
+      rgba(0, 30, 60, 0.9) 100%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    position: relative;
+  }
+  
+  .left-component, .right-component {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-component {
+    flex-direction: column;
+    padding-left: 0px; 
+  }
+  
+  #cursor-circle {
+    content: '';
+    position: absolute;
+    width: 1000px; /* Size of the circle */
+    height: 1000px; /* Size of the circle */
+    background: radial-gradient(circle, rgba(173, 216, 230, 0.1) 0%, rgba(173, 216, 230, 0) 50%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
