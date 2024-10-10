@@ -1,0 +1,27 @@
+.right-component {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column; /* Ensure contents are displayed vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 100px 50px 20px 0px; /* Add padding */
+    height: 100vh; /* Take full height of the viewport */
+    overflow-y: auto; /* Make it scrollable if content exceeds height */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    width: 45vw; /* Ensure the right component takes up 45% of the viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .right-component::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+  }
+  
+  .section {
+    margin-bottom: 20px; /* Add space between sections */
+  }
+  
+  .section p {
+    margin: 0; /* Remove default margin */
+    text-align: justify; /* Justify the text */
+  }
