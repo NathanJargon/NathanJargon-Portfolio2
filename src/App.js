@@ -1,24 +1,27 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Home from './screens/home';
-import DisableZoom from './screens/component/DisableZoom';
+import React, { useEffect } from 'react';
+import './styles/App.css';
+import Home from './components/pages/Home';
 
 function App() {
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const glow = document.querySelector('.glow');
+      const rect = glow.parentElement.getBoundingClientRect();
+      glow.style.transform = `translate(${e.clientX - rect.left - glow.offsetWidth / 2}px, ${e.clientY - rect.top - glow.offsetHeight / 2}px)`;
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
     <div>
-      <Helmet>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <style>
-          {`
-            html, body {
-              touch-action: manipulation;
-              -ms-touch-action: manipulation;
-              overflow: hidden;
-            }
-          `}
-        </style>
-      </Helmet>
-      <DisableZoom />
+      <div className="background">
+        <div className="glow"></div>
+      </div>
       <Home />
     </div>
   );

@@ -1,0 +1,46 @@
+.bottom-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    padding-top: 5rem;
+    padding-left: 8rem;
+}
+
+.bottom-list li {
+    margin: 10px 0;
+}
+
+.bottom-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.2s, color 0.2s, font-size 0.2s;
+}
+
+.bottom-list a:hover {
+    color: white;
+    transform: scale(1.5);
+    font-size: 24px;
+}
+
+.icons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10rem;
+}
+
+.icons a {
+    margin: 0 10px;
+    color: #b0b0b0;
+    font-size: 36px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.icons a:hover {
+    color: white;
+    transform: scale(1.5);
+}
