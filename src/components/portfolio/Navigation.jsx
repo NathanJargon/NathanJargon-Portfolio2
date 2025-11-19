@@ -22,7 +22,7 @@ const Navigation = ({ activeSection, setActiveSection, setIsMobileMenuOpen }) =>
                         <i className="fas fa-user"></i>
                     </div>
                 </div>
-                <h2 className="name">Nash Andrew Yagahon Bondoc</h2>
+                <h2 className="name">Nash Bondoc</h2>
                 <p className="title">Full Stack Developer</p>
                 <div className="status-indicator">
                     <span className="status-dot"></span>
