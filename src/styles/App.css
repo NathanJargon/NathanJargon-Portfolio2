@@ -4,15 +4,17 @@ body {
     overflow: hidden;
     background-color: #000000 !important;
     position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .background {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Ensure it stays behind the content */
+    z-index: -1;
+    pointer-events: none;
   }
   
   .glow {
@@ -23,4 +25,29 @@ body {
     background: radial-gradient(circle, rgba(0, 31, 63, 0.9) 0%, rgba(0, 31, 63, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
     pointer-events: none;
     transition: transform 0.1s ease-out;
+    opacity: 0.6;
+  }
+
+  /* Ensure scrolling is allowed in content area */
+  #root {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 122, 204, 0.5);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 122, 204, 0.8);
   }

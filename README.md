@@ -1,70 +1,182 @@
-# Getting Started with Create React App
+# Nash Bondoc - Professional Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website showcasing Nash Bondoc's expertise as a Full-Stack Developer and Machine Learning Engineer. Built with React.js and featuring professional animations, mobile-first design, and comprehensive project showcase.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Professional Design**: Modern, clean interface with smooth animations and transitions
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Interactive Sections**: 
+  - About me with tabbed navigation (Overview, Experience, Education)
+  - Skills showcase with category filtering and animated progress bars
+  - Project portfolio with filtering by technology/category
+  - Contact form with social media integration
+- **Real-time Animations**: Smooth scroll animations and hover effects
+- **Mobile Navigation**: Collapsible sidebar with touch-friendly interface
+- **Professional Branding**: Consistent color scheme and typography
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Visit the live portfolio: [Nash Bondoc Portfolio](https://nash-portfolio.vercel.app) *(Update with actual deployment URL)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+### Frontend
+- **React.js 18.3.1** - Component-based UI framework
+- **JavaScript ES6+** - Modern JavaScript features
+- **CSS3** - Advanced styling with animations and responsive design
+- **FontAwesome 6.7.2** - Professional icon library
+- **Bootstrap 5.3.3** - Grid system and utility classes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development Tools
+- **Create React App** - Project scaffolding and build tools
+- **VS Code** - Development environment
+- **Git** - Version control
 
-### `npm run build`
+## 📱 Responsive Design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The portfolio is built with a mobile-first approach and includes:
+- Breakpoints for mobile (480px), tablet (768px), and desktop (1024px+)
+- Touch-friendly navigation and buttons
+- Optimized images and animations for all screen sizes
+- Accessible typography scaling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎨 Design Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Color Scheme**: Professional blue gradient theme (#007acc to #0099ff)
+- **Typography**: Segoe UI font family for readability
+- **Animations**: Smooth transitions, hover effects, and scroll animations
+- **Layout**: Left sidebar navigation with main content area
+- **Cards**: Professional card-based design for projects and skills
 
-### `npm run eject`
+## 📂 Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+├── components/
+│   ├── pages/
+│   │   └── Home.jsx              # Main page component
+│   ├── portfolio/
+│   │   ├── About.jsx             # About section with tabs
+│   │   ├── Contact.jsx           # Contact form and info
+│   │   ├── Navigation.jsx        # Sidebar navigation
+│   │   ├── Projects.jsx          # Project showcase
+│   │   └── Skills.jsx            # Skills with categories
+│   └── home/                     # Legacy components
+├── styles/
+│   ├── App.css                   # Global styles
+│   ├── Home.css                  # Layout styles
+│   ├── Navigation.css            # Sidebar navigation
+│   └── Portfolio.css             # Main portfolio styles
+└── assets/                       # Images and media files
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🏃‍♂️ Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
+- Node.js (v14.0.0 or higher)
+- npm or yarn package manager
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/NathanJargon/NathanJargon-Portfolio2.git
+   cd NathanJargon-Portfolio2
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Build for Production
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This creates an optimized production build in the `build` folder, ready for deployment.
 
-### Making a Progressive Web App
+## 📧 Contact Information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Email**: bondoc.nash123@gmail.com
+- **LinkedIn**: [Nash Bondoc](https://www.linkedin.com/in/nashbondoc/)
+- **GitHub**: [NathanJargon](https://github.com/NathanJargon)
+- **Bluesky**: nathanjargon.bsky.social
+- **Phone**: +63 926 840 6265
+- **Location**: Cagayan de Oro, Philippines
 
-### Advanced Configuration
+## 🎯 Professional Background
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Nash Bondoc is a passionate Full-Stack Developer and Machine Learning Engineer with experience at:
+- **Shrader Technology** - Junior Mobile Developer (Sept 2024 - Mar 2025)
+- **QuantumQuill Studios** - Co-Founder & Full-Stack Developer (Dec 2023 - Sept 2024)
+- **USTP** - Backend Developer (Nov 2023 - Nov 2024)
+- **Unify Ivy & RadicalX** - ML Engineer Intern (Sept 2023 - Jan 2024)
 
-### Deployment
+Currently pursuing Bachelor of Science in Computer Science at USTP.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔧 Technical Skills
 
-### `npm run build` fails to minify
+**Frontend**: React, Next.js, JavaScript, TypeScript, HTML/CSS, Tailwind CSS
+**Backend**: Node.js, Python, FastAPI, Django, PHP, SQL
+**Mobile**: React Native, Flutter/Dart, Kotlin, Swift
+**Tools**: Git, Firebase, Figma, Unity, Arduino
+**Languages**: English (Fluent), Tagalog & Bisaya (Native), Korean & Japanese (Beginner)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📱 Featured Projects
+
+- **BLECARDFrames**: Blackjack AI Assistant with BLE and computer vision
+- **GEOPath**: React mapping platform with geolocation features
+- **RPGInterminable**: Complex Python/Pygame role-playing game
+- **ProjectAGUI**: GUI-based water bill management application
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically on every push
+
+### Netlify
+1. Build the project: `npm run build`
+2. Upload the `build` folder to Netlify
+3. Configure redirects for SPA routing
+
+### GitHub Pages
+1. Install gh-pages: `npm install --save-dev gh-pages`
+2. Add to package.json: `"homepage": "https://yourusername.github.io/repository-name"`
+3. Deploy: `npm run deploy`
+
+## 🤝 Contributing
+
+This is a personal portfolio project, but feedback and suggestions are welcome! Feel free to:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request with improvements
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- Create React App for the initial project setup
+- FontAwesome for the comprehensive icon library
+- React community for excellent documentation and resources
+- Design inspiration from modern portfolio trends
+
+---
+
+**Built with ❤️ by Nash Bondoc**
+
+*Last updated: November 2025*

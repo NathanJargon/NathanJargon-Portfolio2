@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import './styles/App.css';
 import Home from './components/pages/Home';
 
+// Import FontAwesome
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 function App() {
   useEffect(() => {
     const handleMouseMove = (e) => {
