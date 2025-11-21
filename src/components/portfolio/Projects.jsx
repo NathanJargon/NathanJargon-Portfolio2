@@ -15,6 +15,10 @@ const Projects = () => {
             year: "2024",
             github: "https://github.com/NathanJargon/BLECARDFrames",
             demo: "https://github.com/NathanJargon/BLECARDFrames",
+            images: [
+                "https://via.placeholder.com/600x400/007acc/ffffff?text=BLECARDFrames+Preview",
+                "https://via.placeholder.com/600x400/0099ff/ffffff?text=Card+Detection+Demo"
+            ],
             featured: true
         },
         {
@@ -27,6 +31,11 @@ const Projects = () => {
             year: "2024",
             github: "https://github.com/NathanJargon/GEOPath",
             demo: "https://github.com/NathanJargon/GEOPath",
+            images: [
+                "https://via.placeholder.com/600x400/10b981/ffffff?text=GEOPath+Interface",
+                "https://via.placeholder.com/600x400/059669/ffffff?text=Map+Integration",
+                "https://via.placeholder.com/600x400/047857/ffffff?text=Admin+Panel"
+            ],
             featured: true
         },
         {
@@ -38,7 +47,13 @@ const Projects = () => {
             status: "Completed",
             year: "2024",
             github: "https://github.com/NathanJargon/RPGInterminable",
-            demo: "https://github.com/NathanJargon/RPGInterminable",
+            demo: null,
+            images: [
+                "https://via.placeholder.com/600x400/8b5cf6/ffffff?text=RPG+Game+Screen",
+                "https://via.placeholder.com/600x400/7c3aed/ffffff?text=Character+Stats",
+                "https://via.placeholder.com/600x400/6d28d9/ffffff?text=Battle+System",
+                "https://via.placeholder.com/600x400/5b21b6/ffffff?text=Inventory+UI"
+            ],
             featured: false
         },
         {
@@ -50,7 +65,10 @@ const Projects = () => {
             status: "Completed",
             year: "2024",
             github: "https://github.com/NathanJargon/ProjectAGUI",
-            demo: "https://github.com/NathanJargon/ProjectAGUI",
+            demo: null,
+            images: [
+                "https://via.placeholder.com/600x400/f59e0b/ffffff?text=GUI+Interface"
+            ],
             featured: true
         }
     ];
@@ -119,6 +137,33 @@ const Projects = () => {
                         </div>
                         
                         <div className="project-content">
+                            {project.images && project.images.length > 0 && (
+                                <div className="project-images">
+                                    <div className="image-carousel">
+                                        {project.images.map((image, imgIndex) => (
+                                            <img 
+                                                key={imgIndex}
+                                                src={image} 
+                                                alt={`${project.title} screenshot ${imgIndex + 1}`}
+                                                className={`project-image ${imgIndex === 0 ? 'active' : ''}`}
+                                                onError={(e) => {
+                                                    e.target.style.display = 'none';
+                                                }}
+                                            />
+                                        ))}
+                                        {project.images.length > 1 && (
+                                            <div className="image-indicators">
+                                                {project.images.map((_, imgIndex) => (
+                                                    <span 
+                                                        key={imgIndex}
+                                                        className={`indicator ${imgIndex === 0 ? 'active' : ''}`}
+                                                    ></span>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            )}
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-description">{project.description}</p>
                             
@@ -130,14 +175,24 @@ const Projects = () => {
                         </div>
                         
                         <div className="project-actions">
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="action-btn secondary">
-                                <i className="fab fa-github"></i>
-                                <span>Source</span>
-                            </a>
-                            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="action-btn primary">
-                                <i className="fas fa-external-link-alt"></i>
-                                <span>Live Demo</span>
-                            </a>
+                            {project.github && (
+                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="action-btn secondary">
+                                    <i className="fab fa-github"></i>
+                                    <span>Source</span>
+                                </a>
+                            )}
+                            {project.demo && (
+                                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="action-btn primary">
+                                    <i className="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            )}
+                            {!project.github && !project.demo && (
+                                <div className="no-links-message">
+                                    <i className="fas fa-info-circle"></i>
+                                    <span>Project details available on request</span>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
