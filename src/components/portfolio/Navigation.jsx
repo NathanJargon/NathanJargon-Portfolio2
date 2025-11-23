@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Navigation.css';
+import { professionalInfo, portfolioStats } from '../../config/portfolioConfig.js';
 
 const Navigation = ({ activeSection, setActiveSection, setIsMobileMenuOpen }) => {
     const navigationItems = [
@@ -22,11 +23,11 @@ const Navigation = ({ activeSection, setActiveSection, setIsMobileMenuOpen }) =>
                         <i className="fas fa-user"></i>
                     </div>
                 </div>
-                <h2 className="name">Nash Bondoc</h2>
-                <p className="title">Full Stack Developer</p>
+                <h2 className="name">{professionalInfo.name.split(' ').slice(0, 2).join(' ')}</h2>
+                <p className="title">{professionalInfo.title}</p>
                 <div className="status-indicator">
                     <span className="status-dot"></span>
-                    <span className="status-text">Available for work</span>
+                    <span className="status-text">{portfolioStats.availability}</span>
                 </div>
             </div>
             
@@ -52,6 +53,9 @@ const Navigation = ({ activeSection, setActiveSection, setIsMobileMenuOpen }) =>
                     </a>
                     <a href="https://www.linkedin.com/in/nashbondoc/" target="_blank" rel="noopener noreferrer" className="social-link">
                         <i className="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://nathanjargon.itch.io" target="_blank" rel="noopener noreferrer" className="social-link">
+                        <i className="fab fa-itch-io"></i>
                     </a>
                     <a href="mailto:bondoc.nash123@gmail.com" className="social-link">
                         <i className="fas fa-envelope"></i>

@@ -22,19 +22,19 @@
 
 /* Header */
 .nav-header {
-    padding: 30px 25px;
+    padding: 20px 20px;
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
 .profile-image {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .profile-placeholder {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 50%;
     display: flex;
@@ -57,17 +57,17 @@
 }
 
 .name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.3rem 0;
     color: #fff;
     text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .title {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.8rem 0;
     font-weight: 500;
 }
 
@@ -130,11 +130,11 @@
 .nav-menu {
     flex: 1;
     list-style: none;
-    padding: 20px 0;
+    padding: 15px 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     position: relative;
     z-index: 1;
 }
@@ -147,16 +147,16 @@
     width: 100%;
     background: none;
     border: none;
-    padding: 15px 20px;
+    padding: 12px 18px;
     text-align: left;
     cursor: pointer;
     border-radius: 12px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
     position: relative;
     overflow: hidden;
@@ -230,7 +230,7 @@
 
 /* Footer */
 .nav-footer {
-    padding: 25px;
+    padding: 18px;
     position: relative;
     z-index: 1;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -239,17 +239,17 @@
 
 .social-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
     justify-items: center;
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    min-height: 40px;
-    border-radius: 10px;
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.8);
     display: flex;
@@ -271,7 +271,7 @@
 }
 
 .social-link i {
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     line-height: 1;
 }

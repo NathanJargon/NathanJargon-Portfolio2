@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/Portfolio.css';
+import { professionalInfo, portfolioStats } from '../../config/portfolioConfig.js';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -29,19 +30,19 @@ const Contact = () => {
         {
             icon: '📧',
             title: 'Email',
-            value: 'bondoc.nash123@gmail.com',
-            link: 'mailto:bondoc.nash123@gmail.com'
+            value: professionalInfo.email,
+            link: `mailto:${professionalInfo.email}`
         },
         {
             icon: '📱',
             title: 'Phone',
-            value: '+63 926 840 6265',
-            link: 'tel:+639268406265'
+            value: professionalInfo.phone,
+            link: `tel:${professionalInfo.phone.replace(/\s/g, '')}`
         },
         {
             icon: '📍',
             title: 'Location',
-            value: 'Cagayan de Oro, Philippines',
+            value: professionalInfo.location,
             link: null
         },
         {
@@ -96,15 +97,15 @@ const Contact = () => {
                             <div className="social-links">
                                 <a href="https://github.com/NathanJargon" target="_blank" rel="noopener noreferrer" className="social-link">
                                     <i className="fab fa-github"></i>
-                                    <span>GitHub</span>
                                 </a>
                                 <a href="https://www.linkedin.com/in/nashbondoc/" target="_blank" rel="noopener noreferrer" className="social-link">
                                     <i className="fab fa-linkedin"></i>
-                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://nathanjargon.itch.io" target="_blank" rel="noopener noreferrer" className="social-link">
+                                    <i className="fab fa-itch-io"></i>
                                 </a>
                                 <a href="https://nathanjargon.bsky.social" target="_blank" rel="noopener noreferrer" className="social-link">
                                     <i className="fas fa-cloud"></i>
-                                    <span>Bluesky</span>
                                 </a>
                             </div>
                         </div>

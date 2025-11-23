@@ -29,7 +29,8 @@
     padding: 20px;
     overflow-y: auto;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-    min-height: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Mobile Menu Toggle */
@@ -94,6 +95,8 @@
     .content-area {
         margin-left: 0;
         padding: 80px 15px 20px 15px;
+        height: 100vh;
+        overflow-y: auto;
     }
 
     .mobile-overlay {
@@ -108,5 +111,7 @@
 
     .content-area {
         padding: 80px 10px 20px 10px;
+        height: 100vh;
+        overflow-y: auto;
     }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/Portfolio.css';
+import { portfolioStats, professionalInfo } from '../../config/portfolioConfig.js';
 
 const About = () => {
     const [activeTab, setActiveTab] = useState('overview');
@@ -213,7 +214,7 @@ const About = () => {
                         <i className="fas fa-project-diagram"></i>
                     </div>
                     <div className="stat-content">
-                        <span className="stat-number">15+</span>
+                        <span className="stat-number">{portfolioStats.projectsDelivered}+</span>
                         <span className="stat-label">Projects Delivered</span>
                     </div>
                 </div>
@@ -223,7 +224,7 @@ const About = () => {
                         <i className="fas fa-clock"></i>
                     </div>
                     <div className="stat-content">
-                        <span className="stat-number">2+</span>
+                        <span className="stat-number">{professionalInfo.experience}+</span>
                         <span className="stat-label">Years Experience</span>
                     </div>
                 </div>
@@ -233,7 +234,7 @@ const About = () => {
                         <i className="fas fa-building"></i>
                     </div>
                     <div className="stat-content">
-                        <span className="stat-number">6+</span>
+                        <span className="stat-number">{portfolioStats.companiesWorkedWith}+</span>
                         <span className="stat-label">Companies Worked</span>
                     </div>
                 </div>
@@ -243,7 +244,7 @@ const About = () => {
                         <i className="fas fa-code"></i>
                     </div>
                     <div className="stat-content">
-                        <span className="stat-number">25+</span>
+                        <span className="stat-number">{portfolioStats.totalTechnologies}+</span>
                         <span className="stat-label">Technologies</span>
                     </div>
                 </div>

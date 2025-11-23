@@ -51,6 +51,7 @@ const Skills = () => {
             color: '#8b5cf6',
             skills: [
                 { name: 'React Native', level: 85, icon: 'fab fa-react', experience: '2+ years' },
+                { name: 'Expo', level: 80, icon: 'fas fa-mobile', experience: '2+ years' },
                 { name: 'Flutter/Dart', level: 80, icon: 'fas fa-mobile', experience: '1+ years' },
                 { name: 'Kotlin', level: 88, icon: 'fas fa-code', experience: '1+ years' },
                 { name: 'Swift', level: 75, icon: 'fab fa-swift', experience: '6 months' },
