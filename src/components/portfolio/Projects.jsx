@@ -217,6 +217,39 @@ const Projects = () => {
                 "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
             ],
             featured: false
+        },
+        {
+            id: 14,
+            title: "ATFLParser",
+            description: "Resilient compiler simulation with Thompson's Construction for regex-to-NFA conversion and LL(1) parsing with bio-inspired adaptive error recovery. Features modular design with separated lexical and syntactic analysis phases.",
+            technologies: ["Python", "Compiler Design", "Finite Automata", "Parsing", "Algorithms"],
+            category: "desktop",
+            status: "Completed",
+            year: "2024",
+            github: "https://github.com/NathanJargon/ATFLParser",
+            demo: null,
+            images: [
+                "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop&crop=center",
+                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
+            ],
+            featured: true
+        },
+        {
+            id: 15,
+            title: "SteezyGadgetHub",
+            description: "Full-featured e-commerce platform with product display, filtering, infinite scroll, cart management, user authentication, and mock checkout functionality. Includes inventory management and user order history.",
+            technologies: ["React", "Firebase", "E-commerce", "Authentication", "State Management"],
+            category: "fullstack",
+            status: "Completed",
+            year: "2024",
+            github: "https://github.com/NathanJargon/SteezyGadgetHub",
+            demo: null,
+            images: [
+                "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=400&fit=crop&crop=center",
+                "https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?w=600&h=400&fit=crop&crop=center",
+                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
+            ],
+            featured: true
         }
     ];
 

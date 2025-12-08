@@ -2,8 +2,8 @@
 export const portfolioStats = {
     // Professional Experience
     yearsOfExperience: 4, // Since 2021
-    projectsDelivered: 13,
-    completedProjects: 13,
+    projectsDelivered: 15,
+    completedProjects: 15,
     
     // Technical Skills
     totalTechnologies: 25, // This will be calculated automatically from projects
