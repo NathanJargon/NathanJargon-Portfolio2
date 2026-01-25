@@ -63,7 +63,6 @@ const Skills = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            const newAnimatedSkills = {};
             skillCategories[activeCategory].skills.forEach((skill, index) => {
                 setTimeout(() => {
                     setAnimatedSkills(prev => ({
@@ -75,7 +74,7 @@ const Skills = () => {
         }, 200);
 
         return () => clearTimeout(timer);
-    }, [activeCategory]);
+    }, [activeCategory, skillCategories]);
 
     const categoryKeys = Object.keys(skillCategories);
     const currentCategory = skillCategories[activeCategory];

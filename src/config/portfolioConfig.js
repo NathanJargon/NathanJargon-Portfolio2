@@ -91,8 +91,10 @@ export const skillLevels = {
     "UI/UX": 80
 };
 
-export default {
+const portfolioConfig = {
     portfolioStats,
     professionalInfo,
     skillLevels
 };
+
+export default portfolioConfig;

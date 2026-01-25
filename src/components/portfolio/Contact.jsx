@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../styles/Portfolio.css';
-import { professionalInfo, portfolioStats } from '../../config/portfolioConfig.js';
+import { professionalInfo } from '../../config/portfolioConfig.js';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
