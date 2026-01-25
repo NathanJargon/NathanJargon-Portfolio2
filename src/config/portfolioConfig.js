@@ -97,4 +97,4 @@ const portfolioConfig = {
     skillLevels
 };
 
-export default portfolioConfig;
+export { portfolioConfig as default };

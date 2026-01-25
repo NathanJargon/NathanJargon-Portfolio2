@@ -74,7 +74,7 @@ const Skills = () => {
         }, 200);
 
         return () => clearTimeout(timer);
-    }, [activeCategory, skillCategories]);
+    }, [activeCategory]);
 
     const categoryKeys = Object.keys(skillCategories);
     const currentCategory = skillCategories[activeCategory];
