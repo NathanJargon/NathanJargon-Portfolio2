@@ -4,7 +4,6 @@ import { portfolioStats } from '../../config/portfolioConfig.js';
 
 const Projects = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
-    const [activeImageIndex, setActiveImageIndex] = useState({});
     
     const projects = [
         {
@@ -15,12 +14,7 @@ const Projects = () => {
             category: "fullstack",
             status: "Completed",
             year: "2024",
-            github: null,
-            demo: "https://shradertechnology.vercel.app",
-            images: [
-                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#FF6B6B",
             featured: true
         },
         {
@@ -31,12 +25,7 @@ const Projects = () => {
             category: "ai",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/BLECARDFrames",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#4ECDC4",
             featured: true
         },
         {
@@ -47,13 +36,7 @@ const Projects = () => {
             category: "fullstack",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/GEOPath",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#95E1D3",
             featured: true
         },
         {
@@ -64,12 +47,7 @@ const Projects = () => {
             category: "game",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/EscapeFlow",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#FFE66D",
             featured: false
         },
         {
@@ -80,12 +58,7 @@ const Projects = () => {
             category: "desktop",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/CPGraphing",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#A8E6CF",
             featured: false
         },
         {
@@ -96,12 +69,7 @@ const Projects = () => {
             category: "mobile",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/Ecoventurer",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#FFD93D",
             featured: true
         },
         {
@@ -112,12 +80,7 @@ const Projects = () => {
             category: "mobile",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/STIQR",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#6BCB77",
             featured: false
         },
         {
@@ -128,12 +91,7 @@ const Projects = () => {
             category: "mobile",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/CSUMobilePortal",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1553484771-371a605b060b?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#4D96FF",
             featured: false
         },
         {
@@ -144,12 +102,7 @@ const Projects = () => {
             category: "fullstack",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/EXPENSEPal",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#FF6348",
             featured: false
         },
         {
@@ -160,12 +113,7 @@ const Projects = () => {
             category: "mobile",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/KARBON",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#38A169",
             featured: true
         },
         {
@@ -176,14 +124,7 @@ const Projects = () => {
             category: "game",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/RPGInterminable",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1556438064-2d7646166914?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#9B59B6",
             featured: false
         },
         {
@@ -194,13 +135,7 @@ const Projects = () => {
             category: "game",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/TAG-ALAM",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#E74C3C",
             featured: true
         },
         {
@@ -211,11 +146,7 @@ const Projects = () => {
             category: "desktop",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/ProjectAGUI",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#3498DB",
             featured: false
         },
         {
@@ -226,12 +157,7 @@ const Projects = () => {
             category: "desktop",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/ATFLParser",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#1ABC9C",
             featured: true
         },
         {
@@ -242,13 +168,7 @@ const Projects = () => {
             category: "fullstack",
             status: "Completed",
             year: "2024",
-            github: "https://github.com/NathanJargon/SteezyGadgetHub",
-            demo: null,
-            images: [
-                "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?w=600&h=400&fit=crop&crop=center",
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center"
-            ],
+            color: "#F39C12",
             featured: true
         }
     ];
@@ -273,27 +193,6 @@ const Projects = () => {
             case 'Beta': return 'info';
             default: return 'default';
         }
-    };
-
-    const nextImage = (projectId, imageCount) => {
-        setActiveImageIndex(prev => ({
-            ...prev,
-            [projectId]: ((prev[projectId] || 0) + 1) % imageCount
-        }));
-    };
-
-    const prevImage = (projectId, imageCount) => {
-        setActiveImageIndex(prev => ({
-            ...prev,
-            [projectId]: ((prev[projectId] || 0) - 1 + imageCount) % imageCount
-        }));
-    };
-
-    const setImageIndex = (projectId, index) => {
-        setActiveImageIndex(prev => ({
-            ...prev,
-            [projectId]: index
-        }));
     };
 
     return (
@@ -339,50 +238,7 @@ const Projects = () => {
                         </div>
                         
                         <div className="project-content">
-                            {project.images && project.images.length > 0 && (
-                                <div className="project-images">
-                                    <div className="image-carousel">
-                                        {project.images.map((image, imgIndex) => (
-                                            <img 
-                                                key={imgIndex}
-                                                src={image} 
-                                                alt={`${project.title} screenshot ${imgIndex + 1}`}
-                                                className={`project-image ${imgIndex === (activeImageIndex[project.id] || 0) ? 'active' : ''}`}
-                                                onError={(e) => {
-                                                    e.target.style.display = 'none';
-                                                }}
-                                            />
-                                        ))}
-                                        {project.images.length > 1 && (
-                                            <>
-                                                <button 
-                                                    className="carousel-btn prev-btn"
-                                                    onClick={() => prevImage(project.id, project.images.length)}
-                                                    aria-label="Previous image"
-                                                >
-                                                    <i className="fas fa-chevron-left"></i>
-                                                </button>
-                                                <button 
-                                                    className="carousel-btn next-btn"
-                                                    onClick={() => nextImage(project.id, project.images.length)}
-                                                    aria-label="Next image"
-                                                >
-                                                    <i className="fas fa-chevron-right"></i>
-                                                </button>
-                                                <div className="image-indicators">
-                                                    {project.images.map((_, imgIndex) => (
-                                                        <span 
-                                                            key={imgIndex}
-                                                            className={`indicator ${imgIndex === (activeImageIndex[project.id] || 0) ? 'active' : ''}`}
-                                                            onClick={() => setImageIndex(project.id, imgIndex)}
-                                                        ></span>
-                                                    ))}
-                                                </div>
-                                            </>
-                                        )}
-                                    </div>
-                                </div>
-                            )}
+                            <div className="project-color-block" style={{ backgroundColor: project.color }}></div>
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-description">{project.description}</p>
                             
@@ -391,27 +247,6 @@ const Projects = () => {
                                     <span key={tech} className="tech-tag">{tech}</span>
                                 ))}
                             </div>
-                        </div>
-                        
-                        <div className="project-actions">
-                            {project.github && (
-                                <a href={project.github} target="_blank" rel="noopener noreferrer" className="action-btn secondary">
-                                    <i className="fab fa-github"></i>
-                                    <span>Source</span>
-                                </a>
-                            )}
-                            {project.demo && (
-                                <a href={project.demo} target="_blank" rel="noopener noreferrer" className="action-btn primary">
-                                    <i className="fas fa-external-link-alt"></i>
-                                    <span>Live Demo</span>
-                                </a>
-                            )}
-                            {!project.github && !project.demo && (
-                                <div className="no-links-message">
-                                    <i className="fas fa-info-circle"></i>
-                                    <span>Project details available on request</span>
-                                </div>
-                            )}
                         </div>
                     </div>
                 ))}
