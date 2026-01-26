@@ -15,7 +15,8 @@ const Projects = () => {
             status: "Completed",
             year: "2024",
             color: "#FF6B6B",
-            featured: true
+            featured: true,
+            demo: "https://shradertechnology.vercel.app"
         },
         {
             id: 2,
@@ -129,7 +130,7 @@ const Projects = () => {
         },
         {
             id: 12,
-            title: "TAG-ALAM",
+            title: "Tag-Alam",
             description: "Filipino-learning Unity game where players pronounce Filipino words correctly to throw slippers towards cans. Features speech recognition technology and cultural education through interactive gameplay.",
             technologies: ["Unity", "C#", "Speech Recognition", "Game Development", "Education"],
             category: "game",
@@ -162,14 +163,15 @@ const Projects = () => {
         },
         {
             id: 15,
-            title: "SteezyGadgetHub",
+            title: "Steezy Gadget Hub",
             description: "Full-featured e-commerce platform with product display, filtering, infinite scroll, cart management, user authentication, and mock checkout functionality. Includes inventory management and user order history.",
             technologies: ["React", "Firebase", "E-commerce", "Authentication", "State Management"],
             category: "fullstack",
             status: "Completed",
             year: "2024",
             color: "#F39C12",
-            featured: true
+            featured: true,
+            demo: "https://steezy-gadget-hub.vercel.app"
         }
     ];
 
@@ -247,6 +249,20 @@ const Projects = () => {
                                     <span key={tech} className="tech-tag">{tech}</span>
                                 ))}
                             </div>
+                            
+                            {project.demo && (
+                                <div className="project-actions">
+                                    <a 
+                                        href={project.demo} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="demo-btn"
+                                    >
+                                        <i className="fas fa-external-link-alt"></i>
+                                        View Demo
+                                    </a>
+                                </div>
+                            )}
                         </div>
                     </div>
                 ))}
