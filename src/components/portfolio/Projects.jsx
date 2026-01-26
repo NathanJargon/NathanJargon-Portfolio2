@@ -184,9 +184,18 @@ const Projects = () => {
         { id: 'desktop', label: 'Desktop', count: projects.filter(p => p.category === 'desktop').length }
     ];
 
-    const filteredProjects = selectedCategory === 'all' 
+    const filteredProjects = (selectedCategory === 'all' 
         ? projects 
-        : projects.filter(project => project.category === selectedCategory);
+        : projects.filter(project => project.category === selectedCategory))
+        .sort((a, b) => {
+            // Prioritize projects with demo links
+            if (a.demo && !b.demo) return -1;
+            if (!a.demo && b.demo) return 1;
+            // Then by featured status
+            if (a.featured && !b.featured) return -1;
+            if (!a.featured && b.featured) return 1;
+            return 0;
+        });
 
     const getStatusColor = (status) => {
         switch (status) {

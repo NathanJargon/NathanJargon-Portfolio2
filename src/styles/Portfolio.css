@@ -532,6 +532,28 @@
     box-shadow: 0 20px 60px rgba(255, 215, 0, 0.3);
 }
 
+/* Projects with demo link - extra emphasis */
+.project-card:has(.demo-btn) {
+    border-color: rgba(0, 122, 204, 0.6);
+    background: linear-gradient(135deg, rgba(0, 122, 204, 0.12) 0%, rgba(255, 255, 255, 0.05) 100%);
+    box-shadow: 0 0 30px rgba(0, 122, 204, 0.15);
+}
+
+.project-card:has(.demo-btn):hover {
+    box-shadow: 0 20px 60px rgba(0, 122, 204, 0.35), 0 0 30px rgba(0, 122, 204, 0.2);
+    border-color: rgba(0, 122, 204, 0.8);
+}
+
+.project-card.featured:has(.demo-btn) {
+    border-color: rgba(255, 215, 0, 0.8);
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(0, 122, 204, 0.08) 100%);
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.25);
+}
+
+.project-card.featured:has(.demo-btn):hover {
+    box-shadow: 0 20px 70px rgba(255, 215, 0, 0.4), 0 0 35px rgba(255, 215, 0, 0.3);
+}
+
 /* Project Images */
 .project-images {
     margin-bottom: 1.5rem;
@@ -754,6 +776,53 @@
 .project-actions {
     display: flex;
     gap: 12px;
+}
+
+.demo-btn {
+    flex: 1;
+    padding: 14px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid;
+    background: linear-gradient(135deg, #007acc 0%, #0099ff 100%);
+    color: #fff;
+    border-color: rgba(0, 255, 255, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 122, 204, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.demo-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.demo-btn:hover::before {
+    left: 100%;
+}
+
+.demo-btn:hover {
+    background: linear-gradient(135deg, #0099ff 0%, #00ccff 100%);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 122, 204, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    border-color: rgba(0, 255, 255, 0.8);
+}
+
+.demo-btn:active {
+    transform: translateY(-2px);
 }
 
 .action-btn {
