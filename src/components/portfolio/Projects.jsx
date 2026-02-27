@@ -38,7 +38,8 @@ const Projects = () => {
             status: "Completed",
             year: "2024",
             color: "#95E1D3",
-            featured: true
+            featured: true,
+            github: "https://github.com/NathanJargon/GEOPath"
         },
         {
             id: 4,
@@ -172,6 +173,30 @@ const Projects = () => {
             color: "#F39C12",
             featured: true,
             demo: "https://steezy-gadget-hub.vercel.app"
+        },
+        {
+            id: 16,
+            title: "Smartways",
+            description: "Expo mobile application for car tracking and management. Enables users to monitor vehicle location, performance metrics, and maintenance schedules in real-time with comprehensive vehicle analytics.",
+            technologies: ["React Native", "Expo", "Location Tracking", "Mobile Dev", "Vehicle Management"],
+            category: "mobile",
+            status: "Completed",
+            year: "2024",
+            color: "#FF4757",
+            featured: true,
+            github: "https://github.com/NathanJargon/Smartways"
+        },
+        {
+            id: 17,
+            title: "Learnify",
+            description: "Mobile expo learning application designed for students. Provides interactive educational content, progress tracking, and personalized learning paths to enhance academic performance and engagement.",
+            technologies: ["React Native", "Expo", "Education", "Mobile Dev", "Learning Management"],
+            category: "mobile",
+            status: "Completed",
+            year: "2024",
+            color: "#5F27CD",
+            featured: true,
+            github: "https://github.com/NathanJargon/LEARNIFYMobile"
         }
     ];
 
@@ -259,8 +284,8 @@ const Projects = () => {
                                 ))}
                             </div>
                             
-                            {project.demo && (
-                                <div className="project-actions">
+                            <div className="project-actions">
+                                {project.demo && (
                                     <a 
                                         href={project.demo} 
                                         target="_blank" 
@@ -270,8 +295,19 @@ const Projects = () => {
                                         <i className="fas fa-external-link-alt"></i>
                                         View Demo
                                     </a>
-                                </div>
-                            )}
+                                )}
+                                {project.github && (
+                                    <a 
+                                        href={project.github} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="github-btn"
+                                    >
+                                        <i className="fab fa-github"></i>
+                                        GitHub Repo
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </div>
                 ))}
