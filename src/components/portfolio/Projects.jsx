@@ -213,9 +213,11 @@ const Projects = () => {
         ? projects 
         : projects.filter(project => project.category === selectedCategory))
         .sort((a, b) => {
-            // Prioritize projects with demo links
-            if (a.demo && !b.demo) return -1;
-            if (!a.demo && b.demo) return 1;
+            const aHasLink = Boolean(a.demo || a.github);
+            const bHasLink = Boolean(b.demo || b.github);
+            // Prioritize projects with demo or GitHub links
+            if (aHasLink && !bHasLink) return -1;
+            if (!aHasLink && bHasLink) return 1;
             // Then by featured status
             if (a.featured && !b.featured) return -1;
             if (!a.featured && b.featured) return 1;
