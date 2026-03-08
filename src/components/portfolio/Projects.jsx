@@ -197,6 +197,18 @@ const Projects = () => {
             color: "#5F27CD",
             featured: true,
             github: "https://github.com/NathanJargon/LEARNIFYMobile"
+        },
+        {
+            id: 17,
+            title: "Mis-Detect",
+            description: "Research-based web application for automated misinformation detection using transformer-based NLP architecture.",
+            technologies: ["React", "Python", "Website Development", "Model", "State Management"],
+            category: "fullstack",
+            status: "Completed",
+            year: "2026",
+            color: "#845fce",
+            featured: true,
+            demo: "https://misdetect.vercel.app"
         }
     ];
 
