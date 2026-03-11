@@ -6,10 +6,10 @@ export const portfolioStats = {
     completedProjects: 50,
     
     // Technical Skills
-    totalTechnologies: 25, // This will be calculated automatically from projects
+    totalTechnologies: 100, // This will be calculated automatically from projects
     
     // Client & Work Stats
-    companiesWorkedWith: 5, // Shrader Technology, QuantumQuill Studios, USTP, Unify Ivy, RadicalX
+    companiesWorkedWith: 10, // Shrader Technology, QuantumQuill Studios, USTP, Unify Ivy, RadicalX
     clientSatisfactionRate: 100, // %
     
     // Development Stats
