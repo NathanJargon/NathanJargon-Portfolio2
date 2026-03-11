@@ -1,9 +1,9 @@
 // Portfolio Configuration - Edit these numbers to update across the entire portfolio
 export const portfolioStats = {
     // Professional Experience
-    yearsOfExperience: 4, // Since 2021
-    projectsDelivered: 15,
-    completedProjects: 15,
+    yearsOfExperience: 6, // Since 2021
+    projectsDelivered: 50,
+    completedProjects: 50,
     
     // Technical Skills
     totalTechnologies: 25, // This will be calculated automatically from projects
@@ -17,7 +17,7 @@ export const portfolioStats = {
     linesOfCode: 50000, // Approximate
     
     // Education & Certifications
-    certifications: 3,
+    certifications: 30,
     educationYears: 4,
     
     // Contact & Availability
@@ -29,11 +29,11 @@ export const portfolioStats = {
     linkedinConnections: 300,
     
     // Project Categories
-    mobileApps: 4,
-    webApplications: 3,
-    gameProjects: 3,
-    desktopApps: 2,
-    aiProjects: 1
+    mobileApps: 17,
+    webApplications: 15,
+    gameProjects: 8,
+    desktopApps: 5,
+    aiProjects: 5
 };
 
 // Professional Information
