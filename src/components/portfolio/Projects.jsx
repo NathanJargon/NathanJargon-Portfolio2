@@ -209,6 +209,18 @@ const Projects = () => {
             color: "#845fce",
             featured: true,
             demo: "https://misdetect.vercel.app"
+        },
+        {
+            id: 18,
+            title: "Madra",
+            description: "MADRA is an Expo + React Native disaster preparedness app focused on awareness, hazard education, and emergency guidance.",
+            technologies: ["React", "Expo", "React Native", "Mobile Dev", "Disaster Preparedness"],
+            category: "mobile",
+            status: "Completed",
+            year: "2024",
+            color: "#3bd590",
+            featured: true,
+            demo: "https://madra-alpha.vercel.app"
         }
     ];
 
